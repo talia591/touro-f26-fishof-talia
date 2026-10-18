@@ -13,3 +13,11 @@
   grid-template-columns: repeat(12, 1fr);
   gap: 1rem;
 }
+
+.page>header {
+  grid-column: 1 / 13;
+}
+
+.page>main {
+  grid-column: 2 / 7;
+}
