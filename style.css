@@ -60,3 +60,9 @@
   color: black;
   text-decoration: none;
 }
+
+@media (max-width: 1500px) {
+  .page>main {
+    grid-column: 1 / 13;
+  }
+}
