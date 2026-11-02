@@ -10,3 +10,6 @@
 | Hero | Image | A Jelly Roll pillow supporting a side sleeper’s neck | Step 1: User sees what the product is and how it is used |
 | Hero | Link | Shop Now | Step 2: User begins the shopping flow |
 | Footer | Paragraph | © 2026 Jelly Roll | None |
+## What the grid did when the content grew
+
+When I removed the fixed heights, the product boxes grew naturally to fit their images and the page became scrollable. The grid kept the products in two columns, while each row adjusted to the height of its content.
