@@ -7,6 +7,11 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* START BELOW */
 .page {
   display: grid;
@@ -37,9 +42,15 @@
 }
 
 .page nav {
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   text-align: center;
+}
+
+.fake-link {
+  color: blue;
+  text-decoration: underline;
 }
 
 .page h1 {
@@ -104,4 +115,17 @@ header nav {
   .page>main {
     grid-column: 1 / 13;
   }
+}
+
+.page main section>img {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.page>footer {
+  grid-column: 1 / 13;
 }
