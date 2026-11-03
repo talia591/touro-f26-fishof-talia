@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
 
-  <body>
+  <body class="cart-page">
     <header>
       <nav>
         <a href="#">How it works</a>
@@ -17,24 +17,26 @@
       </nav>
     </header>
     <main>
-      <h1>Cart</h1>
+      <h1>Cart 🛒</h1>
 
-      <section>
-        <p>Picture of product</p>
+      <section class="cart-item">
+        <img src="https://picsum.photos/seed/classic-jelly/400/300" alt="Classic Jelly Roll pillow">
         <h2>Classic Jelly</h2>
 
         <p>
+        <p class="quantity">
           Quantity:
-          <span>-</span>
+          <button type="button">−</button>
           <span>1</span>
-          <span>+</span>
+          <button type="button">+</button>
+        </p>
         </p>
 
         <p>Shipping by Thursday, Oct. 23</p>
         <p>$39.99</p>
       </section>
 
-      <section>
+      <section class="cart-summary">
         <p>Classic Jelly: $39.99</p>
         <p>Shipping: $0.00</p>
         <h2>Total: $39.99</h2>
