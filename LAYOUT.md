@@ -13,3 +13,6 @@
 | Quantity controls | Minus, number, and plus buttons | One row | Flex | The controls should stay together in one row. |
 | Cart summary | Prices, total, and checkout button | One column | Flex | The summary information is stacked vertically. |
 | Confirmation message | Heading, message, and home link | One column | Flex | The confirmation content is stacked vertically. |
+## One decision I rethought
+
+I kept the product grid as grid because the four products need to stay in equal rows and columns.
