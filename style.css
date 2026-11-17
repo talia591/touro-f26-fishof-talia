@@ -59,6 +59,8 @@ img {
 
 .page h1 {
   font-size: 6rem;
+  font-family: "Coiny", system-ui;
+  color: #d81b60;
 }
 
 .page main p {
@@ -71,8 +73,8 @@ img {
   font-size: 1.5rem;
   margin-top: 1rem;
   padding: 1rem 2.5rem;
-  background-color: lightgray;
-  color: black;
+  background-color: #d81b60;
+  color: white;
   text-decoration: none;
 }
 
@@ -88,13 +90,20 @@ img {
   text-align: center;
 }
 
+.product-grid h2 {
+  font-family: "Coiny", system-ui;
+  color: #d81b60;
+}
+
 /* Flexbox fits because the navigation links are arranged in one row. */
 header nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  gap: 1rem;
-  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 2.5rem;
+  padding: 1.5rem 2rem;
 }
 
 .product-grid article {
@@ -397,4 +406,74 @@ header nav {
   .colors {
     flex-wrap: wrap;
   }
+}
+
+.page header nav,
+.classic-page header nav,
+.cart-page header nav,
+.confirmation-page header nav,
+body>header nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 2.5rem;
+  padding: 1.5rem 2rem;
+}
+
+.product-detail a,
+.classic-page main a {
+  background-color: #d81b60;
+  color: white;
+}
+
+.classic-page a[href="products.html"] {
+  background-color: transparent !important;
+  color: black !important;
+  padding: 0 !important;
+  border: none !important;
+  text-decoration: none;
+}
+
+.classic-page h1 {
+  font-family: "Coiny", system-ui;
+  color: #d81b60;
+}
+
+.cart-page a[href="confirmation.html"] {
+  background-color: #d81b60 !important;
+  color: white !important;
+}
+
+.page main section {
+  padding-left: 2rem;
+}
+
+.page h1,
+.page main p,
+.page main a {
+  position: relative;
+  left: -4rem;
+  top: -6rem;
+}
+
+.product-grid {
+  background: linear-gradient(#cceaff, #eef9ff);
+}
+
+
+.product-grid article {
+  background-color: white;
+}
+
+
+.product-grid>article:first-of-type img {
+  width: 125%;
+  max-width: none;
+  margin-left: -12.5%;
+}
+
+.product-grid article {
+  overflow: hidden;
 }
